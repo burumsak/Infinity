@@ -43,7 +43,7 @@ if __name__=='__main__':
     
 st.markdown('##')  
 
-with st.beta_expander("Show data"):
+with st.expander("Show data"):
     st.write(okc)
 st.write("") 
 st.markdown('##')
@@ -61,7 +61,7 @@ col1, col2 = st.beta_columns(2)
 #form for recommendations
 
 with st.form(key='my_form'):
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
     with col1:
         name = st.text_input("Name")
         age = st.number_input("Age",18,79)
