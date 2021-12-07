@@ -31,17 +31,6 @@ st.set_page_config(
 
 okc = pd.read_excel("Copy of User Details_Faf.xlsx")
 
-col1, col2, col3 = st.beta_columns([1,6,1])
-
-with col1:
-    st.write("")
-
-with col2:
-    st.image("images/Infinity.png", width=300)
-
-with col3:
-    st.write("")
-
 #st.title("Infinity")
 
 st.markdown('##')  
