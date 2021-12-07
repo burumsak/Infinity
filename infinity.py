@@ -29,6 +29,9 @@ st.set_page_config(
     layout="wide"
 )
 
+with open("style.css") as f:
+    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+
 okc = pd.read_excel("Copy of User Details_Faf.xlsx")
 
 st.image("images/Infinity.png", width=300)
