@@ -27,8 +27,8 @@ from nltk.stem.snowball import SnowballStemmer
 def main():
    
     html_temp = """
-    <div style="background-color:#184B44;padding:5px">
-    <h1 style="text-align:center;"> Fumble </h1>
+    <div>
+    <h1 style="text-align:center;"> Infinity </h1>
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
