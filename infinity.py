@@ -29,12 +29,19 @@ st.set_page_config(
     layout="wide"
 )
 
-with open("style.css") as f:
-    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-
 okc = pd.read_excel("Copy of User Details_Faf.xlsx")
 
-st.image("images/Infinity.png", width=300)
+col1, col2, col3 = st.beta_columns([1,6,1])
+
+with col1:
+    st.write("")
+
+with col2:
+    st.image("images/Infinity.png", width=300)
+
+with col3:
+    st.write("")
+
 #st.title("Infinity")
 
 st.markdown('##')  
