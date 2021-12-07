@@ -23,24 +23,19 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem.snowball import SnowballStemmer
 
+st.set_page_config(
+    page_title="Ex-stream-ly Cool App",
+    page_icon="",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-def main():
    
-    html_temp = """
-    <div>
-    <h1 style="text-align:center;"> Infinity </h1>
-    </div>
-    """
-    st.markdown(html_temp,unsafe_allow_html=True)
-
-st.markdown('##')
-
 okc = pd.read_excel("Copy of User Details_Faf.xlsx")
-st.title("Home")
 
-if __name__=='__main__':
-    main() 
-    
+st.image(images/Infinity.png, width=100)
+st.title("Infinity")
+
 st.markdown('##')  
 
 with st.expander("Show data"):
@@ -51,8 +46,7 @@ st.markdown('##')
 '''
 Answer these questions to find new people to interact with!
 '''   
-st.markdown('##')
-
+st.markdown('#')
 
 okc1 = pd.DataFrame()
 
