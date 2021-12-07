@@ -54,9 +54,7 @@ Answer these questions to find new people to interact with!
 st.markdown('##')
 
 
-okc1 = pd.DataFrame() 
-
-col1, col2 = st.beta_columns(2)
+okc1 = pd.DataFrame()
 
 #form for recommendations
 
