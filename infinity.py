@@ -29,60 +29,10 @@ st.set_page_config(
     layout="wide"
 )
 
-CURRENT_THEME = "blue"
-IS_DARK_THEME = True
-EXPANDER_TEXT = """
-    This is a custom theme. You can enable it by copying the following code
-    to `.streamlit/config.toml`:
-    ```python
-    [theme]
-    primaryColor = "#E694FF"
-    backgroundColor = "#00172B"
-    secondaryBackgroundColor = "#0083B8"
-    textColor = "#C6CDD4"
-    font = "sans-serif"
-    ```
-    """
-
 okc = pd.read_excel("Copy of User Details_Faf.xlsx")
 
 st.image("images/Infinity.png", width=300)
 #st.title("Infinity")
-
-THEMES = [
-    "light",
-    "dark",
-    "green",
-    "blue",
-]
-GITHUB_OWNER = "burumsak"
-# Show thumbnails for available themes.
-# As html img tags here, so we can add links on them.
-cols = st.beta_columns(len(THEMES))
-for col, theme in zip(cols, THEMES):
-
-    # Get repo name for this theme (to link to correct deployed app)-
-    if theme == "light":
-        repo = "theming-showcase"
-    else:
-        repo = f"theming-showcase-{theme}"
-
-    # Set border of current theme to red, otherwise black or white
-    if theme == CURRENT_THEME:
-        border_color = "red"
-    else:
-        border_color = "lightgrey" if IS_DARK_THEME else "black"
-
-    col.markdown(
-        #f'<p align=center><a href="https://share.streamlit.io/{GITHUB_OWNER}/{repo}/main"><img style="border: 1px solid {border_color}" alt="{theme}" src="https://raw.githubusercontent.com/{GITHUB_OWNER}/theming-showcase/main/thumbnails/{theme}.png" width=150></a></p>',
-        f'<p align=center><a href="https://apps.streamlitusercontent.com/{GITHUB_OWNER}/{repo}/main/streamlit_app.py/+/"><img style="border: 1px solid {border_color}" alt="{theme}" src="https://raw.githubusercontent.com/{GITHUB_OWNER}/theming-showcase/main/thumbnails/{theme}.png" width=150></a></p>',
-        unsafe_allow_html=True,
-    )
-    if theme in ["light", "dark"]:
-        theme_descriptor = theme.capitalize() + " theme"
-    else:
-        theme_descriptor = "Custom theme"
-    col.write(f"<p align=center>{theme_descriptor}</p>", unsafe_allow_html=True)
 
 st.markdown('##')  
 
