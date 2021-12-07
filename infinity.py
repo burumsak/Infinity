@@ -32,6 +32,7 @@ st.set_page_config(
 okc = pd.read_excel("Copy of User Details_Faf.xlsx")
 
 #st.title("Infinity")
+st.image("images/Infinity.png",width=300)
 
 st.markdown('##')  
 
