@@ -41,9 +41,8 @@ with st.expander("Show data"):
 st.write("") 
 st.markdown('##')
   
-'''
 st.header('_Answer these questions to find new people to interact with!_')
-'''   
+
 st.markdown('#')
 
 okc1 = pd.DataFrame()
