@@ -33,11 +33,17 @@ okc = pd.read_excel("Copy of User Details_Faf.xlsx")
 #st.title("Infinity")
 st.image("images/Infinity.png",use_column_width = True)
 
+header_html= "<img src= 'data:image/png;base64, {}' class='img-fluid'>".format(
+    img_to_bytes("Capture.PNG")
+)
+st.markdown(
+    header_html, unsafe_allow_html=True,
+)
+
 st.markdown('##')  
 
 with st.expander("Show data"):
-    st.dataframe(okc, okc.style.set_properties(**{'background-color': 'black',
-                           'color': 'green'}))
+    st.dataframe(okc)
 st.write("") 
 st.markdown('##')
   
