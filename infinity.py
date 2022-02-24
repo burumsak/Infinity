@@ -25,8 +25,7 @@ from nltk.stem.snowball import SnowballStemmer
 
 st.set_page_config(
     page_title="Infinity",
-    page_icon="♾",
-    layout="wide"
+    page_icon="∞"
 )
 
 okc = pd.read_excel("Copy of User Details_Faf.xlsx")
@@ -37,7 +36,8 @@ st.image("images/Infinity.png",use_column_width = True)
 st.markdown('##')  
 
 with st.expander("Show data"):
-    st.dataframe(okc)
+    st.dataframe(okc, okc.style.set_properties(**{'background-color': 'black',
+                           'color': 'green'}))
 st.write("") 
 st.markdown('##')
   
