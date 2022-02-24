@@ -37,7 +37,7 @@ st.image("images/Infinity.png",width=300)
 st.markdown('##')  
 
 with st.expander("Show data"):
-    st.write(okc)
+    st.dataframe(okc,500,500)
 st.write("") 
 st.markdown('##')
   
