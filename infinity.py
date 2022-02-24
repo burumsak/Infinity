@@ -32,7 +32,7 @@ st.set_page_config(
 okc = pd.read_excel("Copy of User Details_Faf.xlsx")
 
 #st.title("Infinity")
-st.image("images/Infinity.png",width=300)
+st.image("images/Infinity.png",use_column_width = True)
 
 st.markdown('##')  
 
@@ -42,7 +42,7 @@ st.write("")
 st.markdown('##')
   
 '''
-*Answer these questions to find new people to interact with!*
+st.header('_Answer these questions to find new people to interact with!_')
 '''   
 st.markdown('#')
 
@@ -170,5 +170,5 @@ st.markdown('##')
 st.markdown('##')   
 
 if submit_button:
-    st.write("Your Matches are:")
+    st.subheader("Your Matches are: ")
     st.write(rec(0))
