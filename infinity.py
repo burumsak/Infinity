@@ -116,7 +116,7 @@ corpus_df['corpus'] = ok[['age', 'status', 'gender', 'orientation', 'body_type',
        'drugs', 'education', 'ethnicity', 'height', 'income', 'job',
        'offspring', 'pets', 'religion', 'sign', 'smokes', 'speaks', 'essay']].astype(str).agg(' '.join, axis=1)
 corpus_df = corpus_df.astype(str)
-
+ 
 corpus_df['corpus'] = corpus_df['corpus'].map(lambda x: x.replace('\n', ' '))
 corpus_df['corpus'] = corpus_df['corpus'].map(lambda x: x.replace('nan', ' '))
 corpus_df['corpus'] = corpus_df['corpus'].map(lambda x: x.replace("\'", ""))
