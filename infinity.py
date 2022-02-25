@@ -159,7 +159,7 @@ def rec(query_index):
   for i in indices:
     result= result.append(okc1.iloc[i,:])
   result['similarity distance']= distances.flatten()
-  return result[['name',"similarity distance"]] 
+  return result[['name',"similarity distance","age","gender","speaks","sign"]] 
 
 st.markdown('##')
 st.markdown('##')   
