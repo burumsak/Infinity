@@ -29,10 +29,10 @@ st.set_page_config(
     layout="wide"
 )
 
-okc = pd.read_excel("User Details_Faf_1.xlsx")
+okc = pd.read_excel("User Details_Faf.xlsx")
 
 #st.title("Infinity")
-st.image("images/Infinity2.png",use_column_width = True)
+st.image("images/Infinity.png",use_column_width = True)
 
 st.markdown('##')  
 
@@ -117,7 +117,7 @@ corpus_df['corpus'] = ok[['age', 'status', 'gender', 'orientation', 'body_type',
        'drugs', 'education', 'ethnicity', 'height', 'income', 'job',
        'offspring', 'pets', 'religion', 'sign', 'smokes', 'speaks', 'essay']].astype(str).agg(' '.join, axis=1)
 corpus_df = corpus_df.astype(str)
- 
+
 corpus_df['corpus'] = corpus_df['corpus'].map(lambda x: x.replace('\n', ' '))
 corpus_df['corpus'] = corpus_df['corpus'].map(lambda x: x.replace('nan', ' '))
 corpus_df['corpus'] = corpus_df['corpus'].map(lambda x: x.replace("\'", ""))
