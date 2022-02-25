@@ -28,7 +28,7 @@ st.set_page_config(
     page_icon="∞"
 )
 
-okc = pd.read_excel("User Details_Faf.xlsx")
+okc = pd.read_excel("User Details_Faf_1.xlsx")
 
 #st.title("Infinity")
 st.image("images/Infinity2.png",use_column_width = True)
