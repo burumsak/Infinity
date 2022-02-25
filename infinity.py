@@ -158,8 +158,8 @@ def rec(query_index):
   result= pd.DataFrame()
   for i in indices:
     result= result.append(okc1.iloc[i,:])
-  result['similarity distance']= distances.flatten()
-  return result[['name',"similarity distance","age","gender","speaks","sign"]] 
+  result['score']= distances.flatten()
+  return result[['name',"score","age","gender","speaks","sign"]] 
 
 st.markdown('##')
 st.markdown('##')   
