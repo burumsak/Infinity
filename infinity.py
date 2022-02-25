@@ -36,10 +36,7 @@ st.image("images/Infinity.png",use_column_width = True)
 
 st.markdown('##')  
 
-with st.expander("Show data"):
-    st.dataframe(okc)
-st.write("") 
-st.markdown('##')
+
   
 st.header('_Answer these questions to find new people to interact with!_')
 
@@ -163,7 +160,7 @@ def rec(query_index):
   for i in indices:
     result= result.append(okc1.iloc[i,:])
   result['similarity distance']= distances.flatten()
-  return result[['name',"similarity distance","age","status","orientation","ethnicity","religion","diet","essay0"]] 
+  return result[['name',"similarity distance"]] 
 
 st.markdown('##')
 st.markdown('##')   
