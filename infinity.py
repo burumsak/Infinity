@@ -28,17 +28,10 @@ st.set_page_config(
     page_icon="∞"
 )
 
-okc = pd.read_excel("Copy of User Details_Faf.xlsx")
+okc = pd.read_csv("User Details_Faf.csv")
 
 #st.title("Infinity")
-st.image("images/Infinity.png",use_column_width = True)
-
-header_html= "<img src= 'data:image/png;base64, {}' class='img-fluid'>".format(
-    img_to_bytes("Capture.PNG")
-)
-st.markdown(
-    header_html, unsafe_allow_html=True,
-)
+st.image("images/Infinity2.png",use_column_width = True)
 
 st.markdown('##')  
 
