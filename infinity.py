@@ -25,7 +25,8 @@ from nltk.stem.snowball import SnowballStemmer
 
 st.set_page_config(
     page_title="Infinity",
-    page_icon="∞"
+    page_icon="♾",
+    layout="wide"
 )
 
 okc = pd.read_excel("User Details_Faf_1.xlsx")
