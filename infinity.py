@@ -29,7 +29,7 @@ st.set_page_config(
     layout="wide"
 )
 
-okc = pd.read_excel("Copy of User Details_Faf.xlsx")
+okc = pd.read_excel("User Details_Faf.xlsx")
 
 #st.title("Infinity")
 st.image("images/Infinity.png",use_column_width = True)
